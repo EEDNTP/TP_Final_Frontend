@@ -210,6 +210,24 @@ footer{
     }
 }
 
+/* Page recette.html */
+#recipe{
+    header{
+        img{
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+        }
+        .header-content{
+            padding: 20px;
+            h1{
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+
+
 /* Version tablette */
 @media (min-width: 768px){
     :root{
@@ -250,6 +268,17 @@ footer{
             margin: 0;
         }
     }
+
+    /* Page recette.html */
+    #recipe{
+        header{
+            display: flex;
+            .header-image, .header-content{
+                flex: 1;
+            }
+        }
+    }
+    
 }
 
 /* Version ordinateur */
