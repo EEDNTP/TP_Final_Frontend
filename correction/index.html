@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GourmeTech</title>
 
+    <!-- Polices Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/styles.css">
 
     <script src="js/scripts.js" defer></script>
@@ -12,7 +17,7 @@
 <body>
     <header>
         <nav>
-            <a href="index.html"><span>G</span> GourmeTech</a>
+            <a href="index.html" class="logo"><span>G</span> GourmeTech</a>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="#">Ajouter une recette</a></li>
@@ -20,12 +25,12 @@
                 <li><a href="a-propos.html">A propos</a></li>
             </ul>
             <div>
-                <span>
+                <span id="theme-switch">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
                         <use href="assets/icons/sprite.svg#light"></use>
                     </svg>
                 </span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                <svg id="burger" xmlns="http://www.w3.org/2000/svg" width="30" height="30">
                     <use href="assets/icons/sprite.svg#burger"></use>
                 </svg>
             </div>

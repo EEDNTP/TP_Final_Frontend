@@ -1,0 +1,85 @@
+:root{
+    /* Variables CSS */
+    --primary: #e67f22;
+    --grey: #f9f9f9;
+    --duration: #33c96f;
+    --difficulty: #3199de;
+    --favorites: #e74b36;
+    --moon: #eec341;
+    --sun: #eec341;
+
+    /* Taille de police par défaut */
+    font-size: 12px;
+}
+
+/* Mini Reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+/* Mon CSS */
+body{
+    font-family: "Open Sans", sans-serif;
+    margin: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+svg{
+    vertical-align: middle;
+}
+
+/* Header */
+header{
+    box-shadow: 0 5px 5px lightgrey;
+    margin-bottom: 15px;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+
+        .logo{
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1.4rem;
+            span{
+                font-family: "Open Sans", sans-serif;
+                color: white;
+                background-color: var(--primary);
+                width: 30px;
+                height: 30px;
+                display: inline-flex;
+                border-radius: 50%;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        ul{
+            display: none;
+        }
+
+        #theme-switch{
+            width: 30px;
+            height: 30px;
+            display: inline-flex;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--grey);
+            vertical-align: middle;
+            margin-inline-end: 10px;
+        }
+    }
+}
