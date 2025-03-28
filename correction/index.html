@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GourmeTech</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><span>G</span> GourmeTech</a>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#">Ajouter une recette</a></li>
+                <li><a href="favoris.html">Mes favoris</a></li>
+                <li><a href="a-propos.html">A propos</a></li>
+            </ul>
+            <div>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                        <use href="assets/icons/sprite.svg#light"></use>
+                    </svg>
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                    <use href="assets/icons/sprite.svg#burger"></use>
+                </svg>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Formulaire de recherche -->
+        <section>
+            <form action="#" method="get">
+                <div>
+                    <input type="search" name="keywords" id="keywords" placeholder="Rechercher une recette">
+                    <button type="submit">Rechercher</button>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Catégorie</legend>
+                        <div>
+                            <input type="checkbox" name="category" id="entree" value="entree">
+                            <label for="entree">Entrée</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="category" id="plat" value="plat">
+                            <label for="plat">Plat</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="category" id="dessert" value="dessert">
+                            <label for="dessert">Dessert</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Temps de préparation</legend>
+                        <div>
+                            <input type="checkbox" name="duration" id="rapide" value="rapide">
+                            <label for="rapide">Rapide (&lt; 30 min)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="duration" id="moyen" value="moyen">
+                            <label for="moyen">Moyen (30-60 min)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="duration" id="long" value="long">
+                            <label for="long">Long (&gt; 60 min)</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Difficulté</legend>
+                        <div>
+                            <input type="checkbox" name="difficulty" id="facile" value="facile">
+                            <label for="facile">Facile</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="difficulty" id="moyenne" value="moyenne">
+                            <label for="moyenne">Moyen</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="difficulty" id="difficile" value="difficile">
+                            <label for="difficile">Difficile</label>
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+        </section>
+        <!-- Recettes -->
+        <section>
+            <article>
+                <img src="assets/images/concept-nourriture-savoureuse-tarte-aux-pommes-fond-texture_185193-64866.avif" alt="Tarte aux pommes">
+                <div>
+                    <h2>Tarte aux pommes</h2>
+                    <div>
+                        <span>Dessert</span>
+                        <span>60 min</span>
+                        <span>Facile</span>
+                    </div>
+                    <a href="recette.html">Voir la recette</a>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+                        <use href="assets/icons/sprite.svg#heart"></use>
+                    </svg>
+                </div>
+            </article>
+            <article>
+                <img src="assets/images/ratatouille-legumes-dans-poele-table-bois_2829-19906.jpg" alt="Ratatouille provençale">
+                <div>
+                    <h2>Ratatouille provençale</h2>
+                    <div>
+                        <span>Plat</span>
+                        <span>45 min</span>
+                        <span>Moyen</span>
+                    </div>
+                    <a href="recette.html">Voir la recette</a>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+                        <use href="assets/icons/sprite.svg#heart"></use>
+                    </svg>
+                </div>
+            </article>
+            <article>
+                <img src="assets/images/soupe-potiron-aux-croutons_2829-13419.jpg" alt="Velouté de potiron">
+                <div>
+                    <h2>Velouté de potiron</h2>
+                    <div>
+                        <span>Entrée</span>
+                        <span>30 min</span>
+                        <span>Facile</span>
+                    </div>
+                    <a href="recette.html">Voir la recette</a>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+                        <use href="assets/icons/sprite.svg#heart"></use>
+                    </svg>
+                </div>
+            </article>
+        </section> 
+    </main>
+    <footer>
+        <div>
+            <nav>
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="#">Ajouter une recette</a></li>
+                    <li><a href="favoris.html">Mes favoris</a></li>
+                    <li><a href="a-propos.html">A propos</a></li>
+                </ul>
+            </nav>
+            <section>
+                <h2>A propos de GourmeTech</h2>
+                <p>GourmeTech est une plateforme de recettes culinaires interactive développée dans le cadre d'un projet pédagogique.</p>
+            </section>
+        </div>
+        <div>
+            <p>&copy; 2025 GourmeTech - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>
