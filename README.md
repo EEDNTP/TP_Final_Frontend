@@ -43,7 +43,6 @@ gourmeTech/
 │
 ├── index.html              # Page d'accueil avec liste des recettes
 ├── recette.html            # Template pour l'affichage d'une recette
-├── ajouter-recette.html    # Formulaire d'ajout de recette
 ├── favoris.html            # Page des recettes favorites
 ├── a-propos.html           # Page à propos du site
 │
@@ -110,7 +109,7 @@ Cette page affiche les détails d'une recette spécifique :
 **Fonctionnalités JavaScript :**
 - Gestion des favoris
 
-### 4. Page des favoris (favoris.html)
+### 3. Page des favoris (favoris.html)
 
 Cette page affiche les recettes sauvegardées par l'utilisateur :
 
@@ -123,7 +122,7 @@ Cette page affiche les recettes sauvegardées par l'utilisateur :
 - Suppression de favoris avec mise à jour immédiate
 - Persistance des données entre les sessions
 
-### 5. Page à propos (a-propos.html)
+### 4. Page à propos (a-propos.html)
 
 Une page simple présentant :
 
