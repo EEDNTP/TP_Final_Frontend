@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GourmeTech</title>
+
+    <!-- Polices Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo"><span>G</span> GourmeTech</a>
+            <ul>
+                <li class="active"><a href="index.html">Accueil</a></li>
+                <li><a href="#">Ajouter une recette</a></li>
+                <li><a href="favoris.html">Mes favoris</a></li>
+                <li><a href="a-propos.html">A propos</a></li>
+            </ul>
+            <div>
+                <span id="theme-switch">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                        <use href="assets/icons/sprite.svg#light"></use>
+                    </svg>
+                </span>
+                <svg id="burger" xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+                    <use href="assets/icons/sprite.svg#burger"></use>
+                </svg>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Recettes -->
+        <section id="recipe">
+            <header>
+                <div>
+                    <img src="assets/images/concept-nourriture-savoureuse-tarte-aux-pommes-fond-texture_185193-64866.avif" alt="Tarte aux pommes">
+                </div>
+                <div class="header-content">
+                    <h1>Tarte aux pommes</h1>
+                    <div>
+                        <span class="badge category">Dessert</span>
+                        <span class="badge duration">60 min</span>
+                        <span class="badge difficulty">Facile</span>
+                    </div>
+                </div>
+            </header>
+           
+  
+        </section> 
+    </main>
+    <footer>
+        <div id="main-footer">
+            <nav>
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="#">Ajouter une recette</a></li>
+                    <li><a href="favoris.html">Mes favoris</a></li>
+                    <li><a href="a-propos.html">A propos</a></li>
+                </ul>
+            </nav>
+            <section>
+                <h2>A propos de GourmeTech</h2>
+                <p>GourmeTech est une plateforme de recettes culinaires interactive développée dans le cadre d'un projet pédagogique.</p>
+            </section>
+        </div>
+        <div id="copyright">
+            <p>&copy; 2025 GourmeTech - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>

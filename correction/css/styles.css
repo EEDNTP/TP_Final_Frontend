@@ -142,7 +142,7 @@ header{
             margin-bottom: 10px;
         }
         div{
-            margin-block: 10px;
+            margin-block: 25px;
         }
         a{
             color: white;
@@ -210,3 +210,108 @@ footer{
     }
 }
 
+/* Version tablette */
+@media (min-width: 768px){
+    :root{
+        font-size: 14px;
+    }
+
+    /* Formulaire */
+    #filters{
+        #search-box{
+            display: flex;
+            input{
+                border-start-end-radius: 0;
+                border-end-end-radius: 0;
+                margin-bottom: 0;
+                border-right: 0;
+                width: 100%;
+            }
+            button{
+                border-start-start-radius: 0;
+                border-end-start-radius: 0;
+                width: max-content;
+                padding-inline: 15px;
+            }
+        }
+        fieldset{
+            div{
+                display: inline;
+                margin-inline-end: 10px;    
+            }
+        }
+    }
+    #recipes{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-bottom: 20px;
+        .card{
+            margin: 0;
+        }
+    }
+}
+
+/* Version ordinateur */
+@media (min-width: 992px) {
+    :root{
+        font-size: 16px;
+    }
+
+    header{
+        nav{
+            #burger{
+                display: none;
+            }
+            ul{
+                display: flex;
+                list-style: none;
+                gap: 1rem;
+                li{
+                    padding: 10px;
+                    &.active, &:hover{
+                        background-color: var(--grey);
+                        a{
+                            color: var(--primary);
+                        }
+                    }
+                    a{
+                        color: black;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+    #filters{
+        #fields{
+            display: flex;
+            gap: 1rem;
+            fieldset{
+                width: 250px;
+                div{
+                    display: block;
+                }
+            }
+        }
+    }
+    #recipes{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    footer{
+        #main-footer{
+            display: flex;
+            margin-top: 50px;
+            padding-block: 50px;
+            border-block: 1px solid lightgrey;
+            nav, section{
+                flex: 1;
+            }
+        }
+        #copyright{
+            padding: 25px;
+        }
+    }
+}
