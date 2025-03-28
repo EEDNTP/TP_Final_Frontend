@@ -39,8 +39,8 @@
     <main>
         <!-- Formulaire de recherche -->
         <section>
-            <form action="#" method="get">
-                <div>
+            <form action="#" method="get" id="filters">
+                <div id="search-box">
                     <input type="search" name="keywords" id="keywords" placeholder="Rechercher une recette">
                     <button type="submit">Rechercher</button>
                 </div>
@@ -95,52 +95,52 @@
         </section>
         <!-- Recettes -->
         <section>
-            <article>
+            <article class="card">
                 <img src="assets/images/concept-nourriture-savoureuse-tarte-aux-pommes-fond-texture_185193-64866.avif" alt="Tarte aux pommes">
-                <div>
+                <div class="card-content">
                     <h2>Tarte aux pommes</h2>
                     <div>
-                        <span>Dessert</span>
-                        <span>60 min</span>
-                        <span>Facile</span>
+                        <span class="badge category">Dessert</span>
+                        <span class="badge duration">60 min</span>
+                        <span class="badge difficulty">Facile</span>
                     </div>
                     <a href="recette.html">Voir la recette</a>
                 </div>
-                <div>
+                <div class="favorite active">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30">
                         <use href="assets/icons/sprite.svg#heart"></use>
                     </svg>
                 </div>
             </article>
-            <article>
+            <article class="card">
                 <img src="assets/images/ratatouille-legumes-dans-poele-table-bois_2829-19906.jpg" alt="Ratatouille provençale">
-                <div>
+                <div class="card-content">
                     <h2>Ratatouille provençale</h2>
                     <div>
-                        <span>Plat</span>
-                        <span>45 min</span>
-                        <span>Moyen</span>
+                        <span class="badge category">Plat</span>
+                        <span class="badge duration">45 min</span>
+                        <span class="badge difficulty">Moyen</span>
                     </div>
                     <a href="recette.html">Voir la recette</a>
                 </div>
-                <div>
+                <div class="favorite active">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30">
                         <use href="assets/icons/sprite.svg#heart"></use>
                     </svg>
                 </div>
             </article>
-            <article>
+            <article class="card">
                 <img src="assets/images/soupe-potiron-aux-croutons_2829-13419.jpg" alt="Velouté de potiron">
-                <div>
+                <div class="card-content">
                     <h2>Velouté de potiron</h2>
                     <div>
-                        <span>Entrée</span>
-                        <span>30 min</span>
-                        <span>Facile</span>
+                        <span class="badge category">Entrée</span>
+                        <span class="badge duration">30 min</span>
+                        <span class="badge difficulty">Facile</span>
                     </div>
                     <a href="recette.html">Voir la recette</a>
                 </div>
-                <div>
+                <div class="favorite">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30">
                         <use href="assets/icons/sprite.svg#heart"></use>
                     </svg>
@@ -149,7 +149,7 @@
         </section> 
     </main>
     <footer>
-        <div>
+        <div id="main-footer">
             <nav>
                 <h2>Navigation</h2>
                 <ul>
@@ -164,7 +164,7 @@
                 <p>GourmeTech est une plateforme de recettes culinaires interactive développée dans le cadre d'un projet pédagogique.</p>
             </section>
         </div>
-        <div>
+        <div id="copyright">
             <p>&copy; 2025 GourmeTech - Tous droits réservés</p>
         </div>
     </footer>

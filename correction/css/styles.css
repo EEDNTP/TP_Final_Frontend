@@ -83,3 +83,130 @@ header{
         }
     }
 }
+
+/* Formulaire */
+#filters{
+    margin-block: 15px;
+    box-shadow: 0 5px 5px lightgrey;
+    padding: 25px;
+    border-radius: 5px;
+
+    #search-box{
+        margin-bottom: 15px;
+        input{
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid lightgrey;
+            border-radius: 5px;
+        }
+
+        button{
+            width: 100%;
+            color: white;
+            background-color: var(--primary);
+            border: none;
+            border-radius: 5px;
+        }
+    }
+    fieldset{
+        background-color: var(--grey);
+        border: none;
+        padding: 10px;
+        margin-bottom: 10px;
+        legend{
+            float: left;
+            width: 100%;
+            font-weight: 700;
+        }
+        div, legend{
+            margin-bottom: 10px;
+        }
+    }
+}
+
+/* Recettes */
+.card{
+    margin-block: 15px;
+    box-shadow: 0 5px 5px lightgrey;
+    border-radius: 5px;
+    overflow: hidden; /* Ce qui dépasse est caché */
+    position: relative; /* Permet de positionner le coeur */
+    img{
+        aspect-ratio: 16 / 9;
+        object-fit: cover; /* Evite la déformation des images */
+    }
+    .card-content{
+        padding: 20px;
+        h2{
+            margin-bottom: 10px;
+        }
+        div{
+            margin-block: 10px;
+        }
+        a{
+            color: white;
+            background-color: var(--primary);
+            padding: 10px;
+            display: block;
+            text-align: center;
+            border-radius: 5px;
+        }
+    }
+}
+
+.badge{
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50px;
+    margin-inline-end: 10px;
+    &.category{
+        background-color: var(--primary);
+    }
+    &.duration{
+        background-color: var(--duration);
+    }
+    &.difficulty{
+        background-color: var(--difficulty);
+    }
+}
+
+.favorite{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    svg{
+        fill: lightgrey;
+    }
+    &.active{
+        svg{
+            fill: var(--favorites);
+        }
+    }
+}
+
+/* Footer */
+footer{
+    #main-footer{
+        h2{
+            color: var(--primary);
+        }
+        ul{
+            list-style: none;
+            li{
+                margin-bottom: 10px;
+                a{
+                    color: black;
+                }
+            }
+        }
+    }
+    #copyright{
+        padding: 10px;
+        text-align: center;
+    }
+}
+
