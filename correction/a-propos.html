@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GourmeTech</title>
+
+    <!-- Polices Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link id="theme" rel="stylesheet" href="css/styles.css">
+
+    <script src="js/scripts.js" defer></script>
+    <script src="js/contact.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo"><span>G</span> GourmeTech</a>
+            <ul>
+                <li class="active"><a href="index.html">Accueil</a></li>
+                <li><a href="#">Ajouter une recette</a></li>
+                <li><a href="favoris.html">Mes favoris</a></li>
+                <li><a href="a-propos.html">A propos</a></li>
+            </ul>
+            <div>
+                <span id="theme-switch">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                        <use href="assets/icons/sprite.svg#light"></use>
+                    </svg>
+                </span>
+                <svg id="burger" xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+                    <use href="assets/icons/sprite.svg#burger"></use>
+                </svg>
+            </div>
+        </nav>
+    </header>
+    <main class="about">
+        <section class="about-section">
+            <h1>À propos de GourmeTech</h1>
+            <p>GourmeTech est une plateforme interactive dédiée aux passionnés de cuisine. Notre mission est de rendre
+                la cuisine accessible, amusante et collaborative pour tous.</p>
+        </section>
+
+        <section class="contact-section">
+            <h2>Contactez-nous</h2>
+            <form action="#" method="post" novalidate>
+                <div>
+                    <label for="subject">Sujet :</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Sélectionnez un sujet</option>
+                        <option value="question">Question générale</option>
+                        <option value="suggestion">Suggestion</option>
+                        <option value="bug">Signaler un problème</option>
+                        <option value="other">Autre</option>
+                    </select>
+                    <div class="invalid-feedback">Veuillez sélectionner un sujet</div>
+                </div>
+                <div>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="votre.email@exemple.com" required>
+                    <div class="invalid-feedback">Veuillez entrer une adresse email valide</div>
+                </div>
+                <div>
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Décrivez votre demande ici..." required></textarea>
+                    <div class="invalid-feedback">Veuillez entrer un message (minimum 10 caractères)</div>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="rgpd-consent" name="rgpd-consent" required>
+                    <label for="rgpd-consent">J'accepte que mes données personnelles soient traitées conformément à la politique de confidentialité de GourmeTech. Vos informations ne seront jamais partagées avec des tiers.</label>
+                    <div class="invalid-feedback">Vous devez accepter la politique de confidentialité pour continuer</div>
+                </div>
+            
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+
+        <section class="faq-section">
+            <h2>Foire Aux Questions</h2>
+
+            <details name="faq">
+                <summary>Comment ajouter une recette à mes favoris ?</summary>
+                <div class="faq-content">
+                    <p>Pour ajouter une recette à vos favoris, cliquez simplement sur l'icône en forme de cœur qui
+                        apparaît sur chaque carte de recette. La recette sera automatiquement sauvegardée dans votre
+                        section "Favoris" et y restera même après avoir fermé votre navigateur.</p>
+                </div>
+            </details>
+
+            <details name="faq">
+                <summary>Comment filtrer les recettes par catégorie ?</summary>
+                <div class="faq-content">
+                    <p>Dans la barre de navigation en haut de la page d'accueil, vous trouverez des boutons de filtrage
+                        pour les catégories "Entrée", "Plat" et "Dessert". Cliquez sur la catégorie souhaitée pour
+                        afficher uniquement les recettes correspondantes.</p>
+                </div>
+            </details>
+
+            <details name="faq">
+                <summary>Est-il possible de modifier le thème du site ?</summary>
+                <div class="faq-content">
+                    <p>Oui ! GourmeTech propose un mode clair et un mode sombre. Vous pouvez basculer entre les deux en
+                        cliquant sur le bouton de changement de thème situé dans l'en-tête du site. Votre préférence
+                        sera sauvegardée pour vos prochaines visites.</p>
+                </div>
+            </details>
+
+            <details name="faq">
+                <summary>Comment puis-je rechercher une recette spécifique ?</summary>
+                <div class="faq-content">
+                    <p>Utilisez la barre de recherche située en haut de la page d'accueil. Vous pouvez saisir le nom
+                        d'une recette, un ingrédient principal ou un mot-clé. Les résultats s'afficheront
+                        automatiquement sans rechargement de la page.</p>
+                </div>
+            </details>
+
+            <details name="faq">
+                <summary>Les recettes sont-elles adaptables selon le nombre de personnes ?</summary>
+                <div class="faq-content">
+                    <p>Actuellement, les quantités indiquées dans nos recettes sont prévues pour le nombre de personnes
+                        spécifié. Nous travaillons sur une fonctionnalité qui permettra d'ajuster automatiquement les
+                        quantités en fonction du nombre de convives souhaité.</p>
+                </div>
+            </details>
+        </section>
+    </main>
+    <footer>
+        <div id="main-footer">
+            <nav>
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="#">Ajouter une recette</a></li>
+                    <li><a href="favoris.html">Mes favoris</a></li>
+                    <li><a href="a-propos.html">A propos</a></li>
+                </ul>
+            </nav>
+            <section>
+                <h2>A propos de GourmeTech</h2>
+                <p>GourmeTech est une plateforme de recettes culinaires interactive développée dans le cadre d'un projet
+                    pédagogique.</p>
+            </section>
+        </div>
+        <div id="copyright">
+            <p>&copy; 2025 GourmeTech - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-:root {
+:root{
     /* Variables CSS */
     --primary: #e67f22;
     --grey: #f9f9f9;
@@ -13,50 +13,49 @@
 }
 
 /* Mini Reset */
-* {
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-img {
+img{
     width: 100%;
     vertical-align: middle;
 }
 
 /* Mon CSS */
-body {
+body{
     font-family: "Open Sans", sans-serif;
     margin: 10px;
+    color: white;
+    background-color: grey;
 }
 
-a {
+a{
     text-decoration: none;
 }
 
-svg {
+svg{
     vertical-align: middle;
 }
 
 /* Header */
-header {
+header{
     box-shadow: 0 5px 5px lightgrey;
     margin-bottom: 15px;
-
-    nav {
+    nav{
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 10px 20px;
-        position: relative;
 
-        .logo {
+        .logo{
             font-family: "Montserrat", sans-serif;
             font-weight: 700;
             color: var(--primary);
             font-size: 1.4rem;
-
-            span {
+            span{
                 font-family: "Open Sans", sans-serif;
                 color: white;
                 background-color: var(--primary);
@@ -69,45 +68,11 @@ header {
             }
         }
 
-        ul {
+        ul{
             display: none;
-            list-style: none;
-
-            &.open {
-                display: block;
-                position: absolute;
-                top: 100%;
-                background-color: white;
-                box-shadow: 0 5px 5px lightgrey;
-                left: 0;
-                right: 0;
-                padding: 15px;
-
-                li {
-                    margin-block: 10px;
-
-                }
-            }
-
-            li {
-
-                &.active,
-                &:hover {
-                    background-color: var(--grey);
-
-                    a {
-                        color: var(--primary);
-                    }
-                }
-
-                a {
-                    color: black;
-                    font-weight: 600;
-                }
-            }
         }
 
-        #theme-switch {
+        #theme-switch{
             width: 30px;
             height: 30px;
             display: inline-flex;
@@ -122,16 +87,15 @@ header {
 }
 
 /* Formulaire */
-#filters {
+#filters{
     margin-block: 15px;
     box-shadow: 0 5px 5px lightgrey;
     padding: 25px;
     border-radius: 5px;
 
-    #search-box {
+    #search-box{
         margin-bottom: 15px;
-
-        input {
+        input{
             width: 100%;
             margin-bottom: 10px;
             padding: 10px;
@@ -139,7 +103,7 @@ header {
             border-radius: 5px;
         }
 
-        button {
+        button{
             width: 100%;
             color: white;
             background-color: var(--primary);
@@ -147,54 +111,42 @@ header {
             border-radius: 5px;
         }
     }
-
-    fieldset {
-        background-color: var(--grey);
+    fieldset{
+        background-color: black;
         border: none;
         padding: 10px;
         margin-bottom: 10px;
-
-        legend {
+        legend{
             float: left;
             width: 100%;
             font-weight: 700;
         }
-
-        div,
-        legend {
+        div, legend{
             margin-bottom: 10px;
         }
     }
 }
 
 /* Recettes */
-.card {
+.card{
     margin-block: 15px;
     box-shadow: 0 5px 5px lightgrey;
     border-radius: 5px;
-    overflow: hidden;
-    /* Ce qui dépasse est caché */
-    position: relative;
-
-    /* Permet de positionner le coeur */
-    img {
+    overflow: hidden; /* Ce qui dépasse est caché */
+    position: relative; /* Permet de positionner le coeur */
+    img{
         aspect-ratio: 16 / 9;
-        object-fit: cover;
-        /* Evite la déformation des images */
+        object-fit: cover; /* Evite la déformation des images */
     }
-
-    .card-content {
+    .card-content{
         padding: 20px;
-
-        h2 {
+        h2{
             margin-bottom: 10px;
         }
-
-        div {
+        div{
             margin-block: 25px;
         }
-
-        a {
+        a{
             color: white;
             background-color: var(--primary);
             padding: 10px;
@@ -205,297 +157,192 @@ header {
     }
 }
 
-.badge {
+.badge{
     color: white;
     padding: 5px 10px;
     border-radius: 50px;
     margin-inline-end: 10px;
-
-    &.category {
+    &.category{
         background-color: var(--primary);
     }
-
-    &.duration {
+    &.duration{
         background-color: var(--duration);
     }
-
-    &.difficulty {
+    &.difficulty{
         background-color: var(--difficulty);
     }
 }
 
-.favorite {
+.favorite{
     position: absolute;
     top: 10px;
     right: 10px;
     background-color: white;
     border-radius: 50%;
     padding: 5px;
-
-    svg {
+    svg{
         fill: lightgrey;
     }
-
-    &.active {
-        svg {
+    &.active{
+        svg{
             fill: var(--favorites);
         }
     }
 }
 
 /* Footer */
-footer {
-    #main-footer {
-        h2 {
+footer{
+    #main-footer{
+        h2{
             color: var(--primary);
         }
-
-        ul {
+        ul{
             list-style: none;
-
-            li {
+            li{
                 margin-bottom: 10px;
-
-                a {
+                a{
                     color: black;
                 }
             }
         }
     }
-
-    #copyright {
+    #copyright{
         padding: 10px;
         text-align: center;
     }
 }
 
 /* Page recette.html */
-#recipe {
-    header {
-        img {
+#recipe{
+    header{
+        img{
             aspect-ratio: 1 / 1;
             object-fit: cover;
         }
-
-        .header-content {
+        .header-content{
             padding: 20px;
-
-            h1 {
+            h1{
                 margin-bottom: 15px;
             }
         }
     }
-
-    .content {
-        box-shadow: 0 5px 5px lightgrey;
-        margin-block: 15px;
-        padding: 15px;
-
-        ul,
-        ol {
-            margin-left: 25px;
-        }
-    }
 }
 
-/* Page A propos */
-.about {
-    box-shadow: 0 5px 5px lightgrey;
-    margin-block: 15px;
-    padding: 15px;
-
-    section {
-        margin-block: 15px;
-
-        form {
-            div {
-                margin-bottom: 15px;
-
-                input:not([type=checkbox]),
-                select,
-                textarea {
-                    width: 100%;
-                    margin-bottom: 10px;
-                    padding: 10px;
-                    border: 1px solid lightgrey;
-                    border-radius: 5px;
-
-                    &.is-invalid~.invalid-feedback {
-                        display: block;
-                    }
-                }
-            }
-
-            .is-invalid~.invalid-feedback {
-                display: block;
-            }
-
-            .invalid-feedback {
-                color: red;
-                display: none;
-            }
-
-            button {
-                width: 100%;
-                color: white;
-                background-color: var(--primary);
-                border: none;
-                border-radius: 5px;
-                padding: 5px;
-            }
-        }
-    }
-
-    details {
-        box-shadow: 0 5px 5px lightgrey;
-        margin-block: 15px;
-        padding: 15px;
-    }
-}
 
 
 /* Version tablette */
-@media (min-width: 768px) {
-    :root {
+@media (min-width: 768px){
+    :root{
         font-size: 14px;
     }
 
     /* Formulaire */
-    #filters {
-        #search-box {
+    #filters{
+        #search-box{
             display: flex;
-
-            input {
+            input{
                 border-start-end-radius: 0;
                 border-end-end-radius: 0;
                 margin-bottom: 0;
                 border-right: 0;
                 width: 100%;
             }
-
-            button {
+            button{
                 border-start-start-radius: 0;
                 border-end-start-radius: 0;
                 width: max-content;
                 padding-inline: 15px;
             }
         }
-
-        fieldset {
-            div {
+        fieldset{
+            div{
                 display: inline;
-                margin-inline-end: 10px;
+                margin-inline-end: 10px;    
             }
         }
     }
-
-    #recipes {
+    #recipes{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
         margin-bottom: 20px;
-
-        .card {
+        .card{
             margin: 0;
         }
     }
 
     /* Page recette.html */
-    #recipe {
-        header {
+    #recipe{
+        header{
             display: flex;
-
-            .header-image,
-            .header-content {
+            .header-image, .header-content{
                 flex: 1;
             }
         }
     }
-
+    
 }
 
 /* Version ordinateur */
 @media (min-width: 992px) {
-    :root {
+    :root{
         font-size: 16px;
     }
 
-    header {
-        nav {
-            #burger {
+    header{
+        nav{
+            #burger{
                 display: none;
             }
-
-            ul {
+            ul{
                 display: flex;
                 list-style: none;
                 gap: 1rem;
-
-                li {
+                li{
                     padding: 10px;
-
+                    &.active, &:hover{
+                        background-color: var(--grey);
+                        a{
+                            color: var(--primary);
+                        }
+                    }
+                    a{
+                        color: black;
+                        font-weight: 600;
+                    }
                 }
             }
         }
     }
 
-    #filters {
-        #fields {
+    #filters{
+        #fields{
             display: flex;
             gap: 1rem;
-
-            fieldset {
+            fieldset{
                 width: 250px;
-
-                div {
+                div{
                     display: block;
                 }
             }
         }
     }
-
-    #recipes {
+    #recipes{
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    footer {
-        #main-footer {
+    footer{
+        #main-footer{
             display: flex;
             margin-top: 50px;
             padding-block: 50px;
             border-block: 1px solid lightgrey;
-
-            nav,
-            section {
+            nav, section{
                 flex: 1;
             }
         }
-
-        #copyright {
+        #copyright{
             padding: 25px;
-        }
-    }
-
-    /* Page recette.html */
-    #recipe {
-        header {
-            .header-content {
-                flex: 6;
-                display: flex;
-                justify-content: space-between;
-            }
-        }
-    }
-
-    /* Page A propos */
-    .about {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-
-        .faq-section {
-            grid-column: 1 / 2;
-            grid-row: 1/3;
         }
     }
 }

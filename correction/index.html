@@ -10,15 +10,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/styles.css">
+    <link id="theme" rel="stylesheet" href="css/styles.css">
 
     <script src="js/scripts.js" defer></script>
+    <script src="js/favorites.js" defer></script>
+    <script src="js/search.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
             <a href="index.html" class="logo"><span>G</span> GourmeTech</a>
-            <ul>
+            <ul class="open">
                 <li class="active"><a href="index.html">Accueil</a></li>
                 <li><a href="#">Ajouter une recette</a></li>
                 <li><a href="favoris.html">Mes favoris</a></li>
@@ -95,7 +97,7 @@
         </section>
         <!-- Recettes -->
         <section id="recipes">
-            <article class="card">
+            <article class="card" data-id="1025" data-category="dessert" data-duration="moyen" data-difficulty="facile">
                 <img src="assets/images/concept-nourriture-savoureuse-tarte-aux-pommes-fond-texture_185193-64866.avif" alt="Tarte aux pommes">
                 <div class="card-content">
                     <h2>Tarte aux pommes</h2>
@@ -106,13 +108,13 @@
                     </div>
                     <a href="recette.html">Voir la recette</a>
                 </div>
-                <div class="favorite active">
+                <div class="favorite">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30">
                         <use href="assets/icons/sprite.svg#heart"></use>
                     </svg>
                 </div>
             </article>
-            <article class="card">
+            <article class="card" data-id="3894" data-category="plat" data-duration="moyen" data-difficulty="moyenne">
                 <img src="assets/images/ratatouille-legumes-dans-poele-table-bois_2829-19906.jpg" alt="Ratatouille provençale">
                 <div class="card-content">
                     <h2>Ratatouille provençale</h2>
@@ -123,13 +125,13 @@
                     </div>
                     <a href="recette.html">Voir la recette</a>
                 </div>
-                <div class="favorite active">
+                <div class="favorite">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30">
                         <use href="assets/icons/sprite.svg#heart"></use>
                     </svg>
                 </div>
             </article>
-            <article class="card">
+            <article class="card" data-id="854" data-category="entree" data-duration="rapide" data-difficulty="facile">
                 <img src="assets/images/soupe-potiron-aux-croutons_2829-13419.jpg" alt="Velouté de potiron">
                 <div class="card-content">
                     <h2>Velouté de potiron</h2>
